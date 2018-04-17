@@ -45,7 +45,11 @@ function viewCart() {
     }
   
 
-r
+function removeFromCart(item) {
+  if(cart.includes(item)) {
+    
+  }
+
 }
 
 function placeOrder(cardNumber) {
