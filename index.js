@@ -52,7 +52,7 @@ function removeFromCart(item) {
     return cart;
   }
   else {
-    return('Your cart is empty.');
+    return('That item is not in your cart.');
   }
 
 }
