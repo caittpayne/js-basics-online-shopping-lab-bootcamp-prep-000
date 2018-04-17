@@ -48,12 +48,12 @@ function viewCart() {
 function removeFromCart(item) {
   for(let i = 0; i < cart.length; i++) {
     if (cart[i].itemName === item) {
-      cart.splice(i, 1)
+      cart.splice(i, 1);
       
       return cart;
     }
     else {
-      return('')
+      return('That item is not in your cart.')
     }
   }
 
