@@ -46,7 +46,7 @@ function viewCart() {
   
 
 function removeFromCart(item) {
-
+  for()
 
 }
 
