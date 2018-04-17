@@ -47,7 +47,12 @@ function viewCart() {
 
 function removeFromCart(item) {
   if(cart.includes(item)) {
+    cart.splice(i, 1)
     
+    return cart;
+  }
+  else {
+    return('Your cart is empty.');
   }
 
 }
