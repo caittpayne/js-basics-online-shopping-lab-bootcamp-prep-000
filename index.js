@@ -14,7 +14,7 @@ function addToCart(item) {
   const itemInfo = { itemName: `${item}`, itemPrice: price };
   cart.push(itemInfo);
  
- return(`${item} has been added to your cart.`)
+ return(`${item} has been added to your cart.`);
  
 }
 
@@ -28,7 +28,7 @@ function viewCart() {
       itemList.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
     }
     if(cart.length === 1) {
-      return(`In your cart, you have ${itemList}.`)
+      return(`In your cart, you have ${itemList}.`);
     }
     else {
     return(`In your cart, you have ${itemList.slice(0, -1).join(', ')}` + ', and ' + itemList.slice(-1) + '.');
@@ -53,16 +53,16 @@ function removeFromCart(item) {
       return cart;
     }
   }
-  return('That item is not in your cart.')
+  return('That item is not in your cart.');
 }
 
 
 function placeOrder(cardNumber) {
   for( let i = 0; i < cardNumber; i++) {
-    const cartTotal = total()
+    const cartTotal = total();
     cart.splice(0, cart.length);
-    return(`Your total cost is $${cartTotal}, which will be charged to the card ${cardNumber}.`)
+    return(`Your total cost is $${cartTotal}, which will be charged to the card ${cardNumber}.`);
   }
-    return("Sorry, we don't have a credit card on file for you.")
+    return("Sorry, we don't have a credit card on file for you.");
 
 }
